@@ -54,9 +54,10 @@ Start the server
   npm run dev
 ```
 
--
-**Client**
-After all these, we can now move to a different terminal session and run the client there
+
+Start the Client
+
+After all these, we can now move to a different terminal session and run the client there so they are both running.
 
 ```bash
  cd ~/fclite/client && npm start
