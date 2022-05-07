@@ -83,9 +83,9 @@ Client:![terminalOut](https://i.imgur.com/ZRwFxZW.png)
 
 ## Disclaimers
 - First time using Prisma as ORM
-- First time interacting with GQL on the client
 - First time using Apollo Client
-- First time setting up SPA routing with a library (always rolled my own for small projects in the past)
+- First time using Styled Components (I come from a sass/less background)
+- First time setting up SPA routing with a library (In the past I've always rolled my own for small projects and for bigger ones, routing was already there)
 
 ## Featuring
 
