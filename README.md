@@ -81,6 +81,12 @@ Client:![terminalOut](https://i.imgur.com/ZRwFxZW.png)
 
 **Server:** Node, Apollo Server, Prisma, TypeScript
 
+## Disclaimers
+- First time using Prisma as ORM
+- First time interacting with GQL on the client
+- First time using Apollo Client
+- First time setting up SPA routing with a library (always rolled my own for small projects in the past)
+
 ## Featuring
 
 - Client side validation (native HTML5)
