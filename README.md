@@ -1,5 +1,5 @@
 
-# Project Title
+# FC Lite
 
 Simple full stack application for graphql & prisma CRUD
 
