@@ -1,0 +1,34 @@
+generator client {
+  provider = "prisma-client-js"
+  previewFeatures = ["interactiveTransactions"]
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model movies {
+  id           Int            @id @default(autoincrement())
+  title        String         @db.VarChar(255)
+  shareholders shareholders[]
+  transactions transactions[]
+}
+
+model shareholders {
+  id       Int    @id @default(autoincrement())
+  movieId  Int
+  name     String @db.VarChar(75)
+  address  String @db.VarChar(255)
+  iban     String @db.VarChar(50)
+  balance  Float  @db.DoublePrecision()
+  movies   movies @relation(fields: [movieId], references: [id], onDelete: NoAction, onUpdate: NoAction, map: "fk_movie")
+}
+
+model transactions {
+  id          Int    @id @default(autoincrement())
+  movieId     Int
+  amount      Int
+  description String @db.VarChar(255)
+  movies      movies @relation(fields: [movieId], references: [id], onDelete: NoAction, onUpdate: NoAction, map: "fk_movie")
+}
