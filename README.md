@@ -42,7 +42,7 @@ _
 
 **ORM Setup**
 
- Prisma is already set with the schema & migrations, all we have to do is push them to the DB & generating the client.
+ Prisma is already set with the schema & migrations, all we have to do is pushing them to the DB & generating the client.
 
 ```bash
 npx prisma db push && npx prisma generate
@@ -107,3 +107,4 @@ Admin Panel![Admin Panel](https://i.imgur.com/m4mf8dR.png)
 - Get rid of any types on the formData ViewModel by using generics or the open closed principle through interfaces (must investigate)
 - Fix bug of disappearing hero section image when a wallet id is added to the address bar manually
 - Fix the any types in the apollo server resolver arguments
+- Investigate auto codegen (prisma -> gql -> typescript) 
